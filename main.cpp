@@ -6,13 +6,13 @@ int rush(int width, int height)
     {
         std::cout << "/";
 
-        if(width < 3 && width > 1 && height > 1)
+        if(width == 2)
         {
             std::cout << "\\";
         }
     }
 
-    if (width > 3)
+    if (width > 2)
     {
         for (int x = 0; x < width - 2; x++)
         {
@@ -37,7 +37,7 @@ int rush(int width, int height)
             std::cout << " ";
         }
 
-        if(width > 3)
+        if(width >= 2)
         {
             std::cout << "*";
         }
@@ -54,7 +54,7 @@ int rush(int width, int height)
         {
             std::cout << "*";
         }
-        if(width > 2)
+        if(width >= 2)
         {
             std::cout << "/";
         }
@@ -63,7 +63,6 @@ int rush(int width, int height)
 
 int main()
 {
-    rush(4, 4);
-
-
+    rush(3, 10);
+    
 }
